@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript</title>
+  </head>
+  <body>
+    <h1>Javascript Random</h1>
+
+    <script>
+
+
+      var guess1 = prompt("I'm thinking of 3 numbers between 0 and 15 how many can you guess it?", "Enter your first unique guess");
+      inputCheck(guess1, 1);
+      var guess2 = prompt("","Enter your second unique guess");
+      inputCheck(guess2, 2);
+      var guess3 = prompt("","Enter your third unique guess")
+      inputCheck(guess3, 3);
+
+      function inputCheck(guess, number) {
+        if (parseInt(guess)){
+          console.log(`${guess} is an interger`)
+        }
+        else {
+          console.log(`${guess} is not an interger`);
+          if (number===1) {
+            guess1 = prompt("Renter your first guess","Enter an integer");
+            inputCheck(guess1, 1)
+          }
+          if (number===2) {
+            guess2 = prompt("Renter your second guess","Enter an integer");
+            inputCheck(guess2, 2)
+          }
+          if (number===3) {
+            guess3 = prompt("Renter your third guess","Enter an integer");
+            inputCheck(guess3, 3)
+
+          }
+        }
+      }
+      var total = 0
+
+      var answer1 = Math.floor(Math.random() * 16);
+      var answer2 = Math.floor(Math.random() * 16);
+      var answer3 = Math.floor(Math.random() * 16);
+
+      var randomArray = [answer1, answer2, answer3]
+
+      checkGuesses(parseInt(guess1))
+      checkGuesses(parseInt(guess2))
+      checkGuesses(parseInt(guess3))
+
+      function checkGuesses(guess) {
+        console.log(guess)
+        for (var i=0; i < randomArray.length; i++) {
+            if (randomArray[i] === guess){
+              total += 1
+            }
+        }
+      }
+      console.log(`You guess ${total} of the numbers correctly}`)
+
+    </script>
+  </body>
+</html>
