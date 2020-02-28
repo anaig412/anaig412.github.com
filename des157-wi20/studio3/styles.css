@@ -1,0 +1,30 @@
+body {
+    background: #A2C1F2;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: auto;
+    align-items: center;
+    
+    font-family: 'Baloo';
+    color: white;
+    
+  }
+
+h1 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 70px;
+}
+
+button {
+    border-radius: 10px;
+    color: white;
+    background-color: #89A2E0
+}
+
+.image {
+    margin: auto;
+    align-content: center;
+    display: block;
+    padding-top: 50px;
+}
