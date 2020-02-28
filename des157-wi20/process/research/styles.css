@@ -48,6 +48,14 @@ a:hover {
   align-content: center;
 }
 
+.personas {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  align-content: center;
+}
+
 .content {
   float: left;
   width: 100%;
