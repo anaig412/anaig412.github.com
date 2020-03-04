@@ -39,6 +39,11 @@ a:hover {
   font-weight: bolder;
 }
 
+.content {
+  float: left;
+  width: 100%;
+}
+
 .image {
   display: block;
   margin-left: auto;
@@ -48,9 +53,13 @@ a:hover {
   align-content: center;
 }
 
-.content {
-  float: left;
-  width: 100%;
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
 }
 
 article {
