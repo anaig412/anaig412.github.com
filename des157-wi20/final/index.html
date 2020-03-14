@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fragmental</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <audio id="sauce" src="./sounds/calm.mp3" loop>
+    </audio>
+    <div class="homepage">
+      <img src="./images/drawing.png" alt="">
+      <div class="fragment"><h1>frag<span>mental</span></h1>
+      <p> looking at the research about <br>mental health, student stories <br> and steps you can take to <br> raise awareness today</p>
+    </div>
+    </div>
+    <div class="stuff">
+        <div class="" id="toolbar">
+          <div class="homeButton" id="homeButton">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <div class="sectionHeaders">
+            <div id="researchButton">research</div>
+            <div id="storiesButton">stories</div>
+            <div id="actionButton">action</div>
+            <div id="audioButton" class="speakerMute">
+              &nbsp;
+            </div>
+          </div>
+        </div>
+        <div id="researchId"></div>
+      <div class="content">
+        <section class="researchContent">
+          <br>
+          <h2>RESEARCH proves that adolescence is a critical time period during which individuals begin 
+            transitioning into adulthood.</h2>
+          <p>During the ages of 12-18, there are lots of obstacles teenagers must navigate in order to 
+            build a strong foundation for themselves. One of the most commonly overlooked obstacles is 
+            mental health, despite that fact that one in five adolescents experience a mental disorder 
+            every year, self-harm is the third leading cause of death for adolescents, and depression 
+            is among the leading causes of disability.
+            <br><br>
+            Statistics show that of the students with diagnosable illnesses, 40% do not seek help, 
+            50% are struggling in school, and a staggering 80% feel overwhelmed due to these concerns. 
+            Click below to learn more about the most common mental health disorders and their symptoms.</p>
+
+          <div class="boxClick">
+            <div class="box" id="box1">
+              depression
+            </div>
+            <div class="box" id="box2">
+              anxiety
+            </div>
+            <div class="box" id="box3">
+              eating disorders
+            </div>
+            <div class="box" id="box4">
+              addiction
+            </div>
+            <div id="popUp" class="hidden">
+              <div id="exit" class="exit">
+                [x]
+              </div>
+              <div id="description" class="description">
+
+              </div>
+            </div>
+          </div>
+
+          <p>Treatment by mental health professionals makes a significant difference in teen mental 
+            health disorders, but many don’t get the type of mental health treatment they need. 
+            In fact, 6 out of 10 teens with depression, and 8 out of 10 teens 
+            with anxiety don’t receive treatment.
+            <br><br>
+            Overall, mental disorders are widespread and range from brief periods of distress to 
+            chronic mental illness. Having access to treatment during this challenging time is crucial,
+            especially since earlier treatment results in better outcomes.
+          </p>
+
+        </section>
+        
+        <div id="storiesId"></div>
+        <section class="storyContent" id="">
+          <h2>STORIES help bring a face to these prevalent mental health issues.</h2>
+          <p>Click through the slideshow below to learn about some students' struggles.</p>
+          <br>
+          
+          <div id="slider-wrapper">
+            <ul>
+              <li>
+                <div class="content">
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                </div>
+              </li>
+              <li>
+                <div class="content">
+                </div>
+              </li>
+            </ul>
+            <div id="slider-controls">
+              <a href="#" id="prev"><<</a>
+              <a href="#" id="next">>></a>
+            </div>
+          </div>
+
+          <p>*names have been changed</p>
+          <p>These are just some examples, and the truth is that over half of high school students
+            in the U.S. struggle with similar issues.<p>
+          <p>If you find yourself relating to these stories and think you might be struggling, 
+            answer some of the questions below to learn about resources that might be useful to you! 
+            Select a number on the scale for your answer, with [ 1 ] meaning you have never felt 
+            like this, and [ 5 ] if you always feel this way.</p>
+
+
+          <form id="myForm">
+
+          <div class="question">
+            <p><b>1.</b> I feel sad and tired often.</p>
+          <fieldset id="rate" class="rate">
+            <input type="radio" id="q1n5" name="rate" value="5" />
+            <label for="q1n5" title="text">[5]</label>
+            <input type="radio" id="q1n4" name="rate" value="4" />
+            <label for="q1n4" title="text">[4]</label>
+            <input type="radio" id="q1n3" name="rate" value="3" />
+            <label for="q1n3" title="text">[3]</label>
+            <input type="radio" id="q1n2" name="rate" value="2" />
+            <label for="q1n2" title="text">[2]</label>
+            <input type="radio" id="q1n1" name="rate" value="1" />
+            <label for="q1n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>2.</b> I feel anxious or worried.</p>
+          <fieldset id="rate1" class="rate">
+            <input type="radio" id="q2n5" name="rate1" value="5" />
+            <label for="q2n5" title="text">[5]</label>
+            <input type="radio" id="q2n4" name="rate1" value="4" />
+            <label for="q2n4" title="text">[4]</label>
+            <input type="radio" id="q2n3" name="rate1" value="3" />
+            <label for="q2n3" title="text">[3]</label>
+            <input type="radio" id="q1n2" name="rate1" value="2" />
+            <label for="q2n2" title="text">[2]</label>
+            <input type="radio" id="q2n1" name="rate1" value="1" />
+            <label for="q2n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>3.</b> I feel have emotional outbursts.</p>
+          <fieldset id="rate2" class="rate">
+            <input type="radio" id="q3n5" name="rate2" value="5" />
+            <label for="q3n5" title="text">[5]</label>
+            <input type="radio" id="q3n4" name="rate2" value="4" />
+            <label for="q3n4" title="text">[4]</label>
+            <input type="radio" id="q3n3" name="rate2" value="3" />
+            <label for="q3n3" title="text">[3]</label>
+            <input type="radio" id="q3n2" name="rate2" value="2" />
+            <label for="q3n2" title="text">[2]</label>
+            <input type="radio" id="q3n1" name="rate2" value="1" />
+            <label for="q3n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>4.</b> I feel stressed and overwhelmed.</p>
+          <fieldset id="rate3" class="rate">
+            <input type="radio" id="q4n5" name="rate3" value="5" />
+            <label for="q4n5" title="text">[5]</label>
+            <input type="radio" id="q4n4" name="rate3" value="4" />
+            <label for="q4n4" title="text">[4]</label>
+            <input type="radio" id="q4n3" name="rate3" value="3" />
+            <label for="q4n3" title="text">[3]</label>
+            <input type="radio" id="q4n2" name="rate3" value="2" />
+            <label for="q4n2" title="text">[2]</label>
+            <input type="radio" id="q4n1" name="rate3" value="1" />
+            <label for="q4n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>5.</b> I suffer from mood swings.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q5n5" name="rate4" value="5" />
+            <label for="q5n5" title="text">[5]</label>
+            <input type="radio" id="q5n4" name="rate4" value="4" />
+            <label for="q5n4" title="text">[4]</label>
+            <input type="radio" id="q5n3" name="rate4" value="3" />
+            <label for="q5n3" title="text">[3]</label>
+            <input type="radio" id="q5n2" name="rate4" value="2" />
+            <label for="q5n2" title="text">[2]</label>
+            <input type="radio" id="q5n1" name="rate4" value="1" />
+            <label for="q5n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>6.</b> I feel either extremely hungry or not at all.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q6n5" name="rate4" value="5" />
+            <label for="q6n5" title="text">[5]</label>
+            <input type="radio" id="q6n4" name="rate4" value="4" />
+            <label for="q6n4" title="text">[4]</label>
+            <input type="radio" id="q6n3" name="rate4" value="3" />
+            <label for="q6n3" title="text">[3]</label>
+            <input type="radio" id="q6n2" name="rate4" value="2" />
+            <label for="q6n2" title="text">[2]</label>
+            <input type="radio" id="q6n1" name="rate4" value="1" />
+            <label for="q6n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>7.</b> I am irritable.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q7n5" name="rate4" value="5" />
+            <label for="q7n5" title="text">[5]</label>
+            <input type="radio" id="q7n4" name="rate4" value="4" />
+            <label for="q7n4" title="text">[4]</label>
+            <input type="radio" id="q7n3" name="rate4" value="3" />
+            <label for="q7n3" title="text">[3]</label>
+            <input type="radio" id="q7n2" name="rate4" value="2" />
+            <label for="q7n2" title="text">[2]</label>
+            <input type="radio" id="q7n1" name="rate4" value="1" />
+            <label for="q7n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>8.</b> I turn to drugs or alcohol when distressed.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q8n5" name="rate4" value="5" />
+            <label for="q8n5" title="text">[5]</label>
+            <input type="radio" id="q8n4" name="rate4" value="4" />
+            <label for="q8n4" title="text">[4]</label>
+            <input type="radio" id="q8n3" name="rate4" value="3" />
+            <label for="q8n3" title="text">[3]</label>
+            <input type="radio" id="q8n2" name="rate4" value="2" />
+            <label for="q8n2" title="text">[2]</label>
+            <input type="radio" id="q8n1" name="rate4" value="1" />
+            <label for="q8n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>9.</b> I have trouble sleeping.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q9n5" name="rate4" value="5" />
+            <label for="q9n5" title="text">[5]</label>
+            <input type="radio" id="q9n4" name="rate4" value="4" />
+            <label for="q9n4" title="text">[4]</label>
+            <input type="radio" id="q9n3" name="rate4" value="3" />
+            <label for="q9n3" title="text">[3]</label>
+            <input type="radio" id="q9n2" name="rate4" value="2" />
+            <label for="q9n2" title="text">[2]</label>
+            <input type="radio" id="q9n1" name="rate4" value="1" />
+            <label for="q9n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="question">
+            <p><b>10.</b> My family has a history mental illness.</p>
+          <fieldset id="rate4" class="rate">
+            <input type="radio" id="q10n5" name="rate4" value="5" />
+            <label for="q10n5" title="text">[5]</label>
+            <input type="radio" id="q10n4" name="rate4" value="4" />
+            <label for="q10n4" title="text">[4]</label>
+            <input type="radio" id="q10n3" name="rate4" value="3" />
+            <label for="q10n3" title="text">[3]</label>
+            <input type="radio" id="q10n2" name="rate4" value="2" />
+            <label for="q10n2" title="text">[2]</label>
+            <input type="radio" id="q10n1" name="rate4" value="1" />
+            <label for="q10n1" title="text">[1]</label>
+          </fieldset>
+          </div>
+
+          <div class="submitButton">
+          <input class="submit" type="submit" value="submit">
+        </div>
+          </form>
+        <div id="resources" class="invisible">
+        </div>
+      </section>
+        <div id="actionId"></div>
+
+        <p>Remember that no online resource is a substitute for real treatment. If you need
+          help, don't be afraid to take steps and get better. Try reaching out to your friends and 
+          family to talk about your problems, or speak to a doctor and seek professional treatment.
+
+        <section class="action">
+          <h2>ACTION leads to change. Take a look at some the steps we can all take to raise 
+            awareness about mental health for teens.
+          </h2>
+          <div class="actionList">
+            <p>1</p>
+            <h3>Listen to those around you</h3>
+            <p>2</p>
+            <h3>Be an ally</h3>
+            <br>
+            <p>3</p>
+            <h3>Start an organization at your scool</h3>
+            <br> 
+            <p>4</p>
+            <h3>Raise awareness in your community</h3>
+            <br> 
+          </div>
+          <p>If we all commit to doing just some of these things, we can change lives of adolescents
+            in our community for the better.</p>
+        </section>
+
+        <div class="backTop" id="topButton">
+          Back to top
+        </div>
+      </div>
+
+    </div>
+
+    <footer>
+      <a href="https://validator.w3.org/check?uri=referer">Valid HTML</a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
